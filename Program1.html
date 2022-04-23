@@ -1,0 +1,82 @@
+<!document html>
+<html>
+    <head>
+        <title>
+            Program: 1
+        </title>
+        <style>
+            #c{
+                border:3px solid blue;
+                margin-top:0px;
+                /* position:absolute; */
+                /* margin-left: ; */
+
+            }
+            #n{
+                color:red;
+                margin-bottom: auto;
+                position: absolute;
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: medium;
+                border-radius: 6px;
+            }
+            #z{
+                position: relative;
+                
+
+            }
+            #l{
+                border-radius: 5px;
+                color:red;
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: medium;
+
+            }
+            
+        </style>
+    </head>
+    <body>
+        <h1>Hi, this is my first program</h1>
+
+        <img src = "https://www.loudegg.com/wp-content/uploads/2020/10/Mickey-Mouse.jpg" width = 110px height:110px >
+        <img id = "c" src = " https://c.tenor.com/YQsXmTwl71wAAAAM/cinderella-disney.gif">
+        <button type = "button" id = "n"  onclick = 'document.getElementById("c").src = "https://i.gifer.com/6zEg.gif"'> Click me!</button>
+        <h2 id ="z">Hi, how are you?</h2>
+        <button  id ="l" type = "button" onclick = 'document.getElementById("z").style.color = "red"'>Click and see megic!</button>
+       <h3 id ="k">hi, everyone</h3>
+       <h4 id = "w">
+           What's the time?
+       </h4>
+       <script>
+          alert("Welcome!")
+          var x =confirm("Do you want to see this webpage");
+          
+          if(x === true){
+            var n = prompt("What color do you like?");
+            document.getElementsByTagName("h1")[0].style.color= n;
+            var k = prompt("Enter something");
+            document.getElementsByTagName("h1")[0].innerHTML =k;
+          var e =   document.getElementsByTagName("img")[0].src = "https://hips.hearstapps.com/digitalspyuk.cdnds.net/17/05/1486126267-mickey-mouse.jpg";
+          }
+          else{
+              alert("You can't run this webpage")
+          }
+          
+          document.getElementById("k").addEventListener('click', function(){
+              console.log("You have clicked");
+              
+          });
+        let variable;
+        console.log("You have clicked the heading");
+        
+          document.getElementById("w").addEventListener('mouseover', function(e){
+            //variable = e.offsetX;
+           
+            variable = e.clientY;
+             console.log(variable);
+          });
+          
+        </script>
+
+    </body>
+</html>
